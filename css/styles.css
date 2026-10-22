@@ -229,7 +229,7 @@ section { padding: var(--space-6) 0; position: relative; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.85rem 0;
+  padding-block: 0.85rem;
 }
 
 .nav-logo img { height: 48px; width: auto; aspect-ratio: 856 / 744; }
