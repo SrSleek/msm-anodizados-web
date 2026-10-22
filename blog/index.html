@@ -15,10 +15,12 @@
 <meta name="twitter:description" content="Artículos técnicos sobre anodizado, recubrimientos y acabados superficiales para la industria metalmecánica.">
 <meta name="twitter:image" content="https://msmanodizados.com/assets/images/logo-dark.png">
 <link rel="canonical" href="https://msmanodizados.com/blog/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/styles.css">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/images/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 <style>
   .blog-hero {
     background: var(--ink);
@@ -108,7 +110,7 @@
 <header class="site-header" id="siteHeader">
   <div class="container nav">
     <a href="/" class="nav-logo" aria-label="MSM Anodizados — inicio">
-      <img src="/assets/images/logo-dark.png" alt="MSM Anodizados">
+      <img src="/assets/images/logo-dark.webp" alt="MSM Anodizados" width="55" height="48">
     </a>
     <nav class="nav-links" aria-label="Navegación principal">
       <a href="/#servicios">Servicios</a>
@@ -120,7 +122,7 @@
     </nav>
     <div class="nav-cta">
       <a href="/#contacto" class="btn btn-outline on-dark">Cotizar</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">☰</button>
     </div>
   </div>
 </header>
@@ -152,7 +154,7 @@
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
-      <a href="/" class="footer-logo"><img src="/assets/images/logo-dark.png" alt="MSM Anodizados"></a>
+      <a href="/" class="footer-logo"><img src="/assets/images/logo-dark.webp" alt="MSM Anodizados" width="39" height="34" loading="lazy"></a>
       <div class="footer-links">
         <a href="/#servicios">Servicios</a>
         <a href="/#colores">Colores</a>

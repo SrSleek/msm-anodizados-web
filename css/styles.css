@@ -1,5 +1,37 @@
 /* ============================================
    MSM ANODIZADOS — Design System
+   Fuentes (auto-hospedadas, subset latin)
+   ============================================ */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700 900;
+  font-display: swap;
+  src: url('/assets/fonts/archivo-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url('/assets/fonts/inter-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/plexmono-400-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/plexmono-500-latin.woff2') format('woff2');
+}
+
+/* ============================================
    Tokens
    ============================================ */
 :root {
@@ -200,7 +232,7 @@ section { padding: var(--space-6) 0; position: relative; }
   padding: 0.85rem 0;
 }
 
-.nav-logo img { height: 48px; width: auto; }
+.nav-logo img { height: 48px; width: auto; aspect-ratio: 856 / 744; }
 
 .nav-links {
   display: flex;
@@ -231,10 +263,13 @@ section { padding: var(--space-6) 0; position: relative; }
 
 .nav-toggle {
   display: none;
+  min-width: 44px;
+  min-height: 44px;
   background: none;
   border: none;
   color: var(--paper);
   font-size: 1.6rem;
+  line-height: 1;
   cursor: pointer;
 }
 
@@ -296,7 +331,7 @@ section { padding: var(--space-6) 0; position: relative; }
   grid-template-columns: 1.15fr 0.85fr;
   gap: var(--space-5);
   align-items: center;
-  padding: var(--space-6) 0;
+  padding-block: var(--space-6);
 }
 
 @media (max-width: 900px) {
@@ -421,7 +456,7 @@ section { padding: var(--space-6) 0; position: relative; }
   font-size: 0.78rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #6b6a66;
+  color: #5c5b57;
 }
 .strip-row span { white-space: nowrap; }
 
@@ -646,7 +681,7 @@ section { padding: var(--space-6) 0; position: relative; }
 .gallery-note {
   margin-top: var(--space-3);
   font-size: 0.85rem;
-  color: #6b6a66;
+  color: #5c5b57;
   font-family: var(--font-mono);
 }
 
@@ -732,7 +767,7 @@ section { padding: var(--space-6) 0; position: relative; }
   flex-wrap: wrap;
   gap: var(--space-3);
 }
-.footer-logo img { height: 34px; }
+.footer-logo img { height: 34px; width: auto; aspect-ratio: 856 / 744; }
 .footer-meta { font-family: var(--font-mono); font-size: 0.78rem; color: #8c8b87; }
 .footer-links { display: flex; gap: var(--space-3); }
 .footer-links a { font-family: var(--font-mono); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; color: #c7c6c2; }
@@ -743,7 +778,7 @@ section { padding: var(--space-6) 0; position: relative; }
   border-top: 1px solid var(--line);
   font-family: var(--font-mono);
   font-size: 0.72rem;
-  color: #6b6a66;
+  color: #8c8b87;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
