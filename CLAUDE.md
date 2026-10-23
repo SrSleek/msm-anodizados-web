@@ -8,7 +8,7 @@ ubicada en Puebla, México. Cliente: industria metalmecánica, automotriz, médi
 
 ## Stack
 - HTML/CSS/JS estático — sin build step
-- Fuentes: Google Fonts (Archivo, Inter, IBM Plex Mono) — ya enlazadas en `<head>`
+- Fuentes: Archivo, Inter, IBM Plex Mono auto-hospedadas en `assets/fonts/` (declaradas en `css/styles.css`)
 - Sin dependencias de npm, sin Docker — deploy directo a Cloudflare Pages
 - Idioma: español (es-MX)
 
@@ -17,8 +17,11 @@ ubicada en Puebla, México. Cliente: industria metalmecánica, automotriz, médi
 index.html
 css/styles.css
 js/main.js
-assets/images/logo-light.png   (logo con fondo transparente, texto oscuro — usar en fondos claros)
-assets/images/logo-dark.png    (logo con texto blanco — usar en navbar/footer sobre fondo oscuro)
+assets/images/logo-dark.webp   (logo con texto blanco, 96px alto — navbar/footer del home y blog)
+assets/images/logo-dark.png    (mismo logo en PNG 360px — artículos y og:image)
+assets/images/favicon-32.png, apple-touch-icon.png, /favicon.ico
+assets/fonts/                  (Archivo, Inter, IBM Plex Mono auto-hospedadas, subset latin)
+404.html                       (Cloudflare Pages la sirve con código 404)
 _headers                       (headers de seguridad para Cloudflare Pages)
 .gitignore
 ```
